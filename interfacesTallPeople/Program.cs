@@ -14,6 +14,7 @@ namespace interfacesTallPeople
             FunnyFunny someFunnyClown = fingersTheClown;
             IScaryClown someOtherScaryClown = someFunnyClown as IScaryClown;
             someOtherScaryClown.Honk();
+            someOtherScaryClown.ScareLittleChildren();
             Console.ReadKey();
 
             //TallGuy tallguy = new TallGuy() { Name = "Jimmy", Height = 74 };
