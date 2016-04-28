@@ -10,9 +10,15 @@ namespace interfacesTallPeople
     {
         static void Main(string[] args)
         {
-            TallGuy tallguy = new TallGuy() { Name = "Jimmy", Height = 74 };
-            tallguy.TalkAboutYourself();
-            tallguy.Honk();
+            ScaryScary fingersTheClown = new ScaryScary("big shoes", 14);
+            FunnyFunny someFunnyClown = fingersTheClown;
+            IScaryClown someOtherScaryClown = someFunnyClown as IScaryClown;
+            someOtherScaryClown.Honk();
+            Console.ReadKey();
+
+            //TallGuy tallguy = new TallGuy() { Name = "Jimmy", Height = 74 };
+            //tallguy.TalkAboutYourself();
+            //tallguy.Honk();
         }
     }
 }
